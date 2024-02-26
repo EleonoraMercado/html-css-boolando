@@ -14,17 +14,18 @@ img {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
+    flex-wrap: wrap;
 }
 
 .row {
     display: flex;
-    row-gap: 24px;
+    flex-wrap: wrap;
 }
 
 .row *{
-    padding: 0 12px;
+    padding: 0 6px;
 }
 
 /* inizio header */
@@ -77,12 +78,16 @@ section {
     display: flex;
 }
 
+/* primo contenitore del titolo e sottotitolo */
 .col-100 {
     width: 100%;
 }
 
 .titolo-sottotitolo {
-    padding: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 20px;
 }
 
 .titolo-sottotitolo h2 {
@@ -96,6 +101,117 @@ section {
     text-align: center;
     font-size: 20px;
     font-weight: 300;
+}
+/* fine area primo conenitore titolo e sottotitolo */
+
+/* inizio contenitore con img */
+.col-33 {
+    width: calc(4 * 100% / 12);
+}
+
+.row .modelli {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.modelli .container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+.modelli {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.card-modelli {
+    width: 100%;
+    padding: 0;
+    border: 1px solid rgb(225, 225, 225);
+    margin-bottom: 30px;
+}
+
+.card-modelli img {
+    width: 100%;
+    padding: 0;
+}
+
+.card-modelli figure {
+    padding: 0;
+}
+
+.prezzo {
+    padding-left: 1px;
+}
+
+.grigio {
+    font-size: 15px;
+    color: rgb(157, 155, 155);
+}
+
+.rosso {
+    color: red;
+}
+
+.prezzo.grigio {
+    text-decoration: line-through;
+}
+
+.modelli__info {
+    text-align: left;
+    padding: 0;
+}
+
+.modello-capo {
+    font-size: 16px;
+}
+/* fine contenitore con img */
+
+/* fine main pagina */
+
+/* footer */
+.page-footer {
+    background-color: black;
+    color: white;
+    height: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+ .page-footer .row {
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+} 
+
+ .informativa {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 0;
+    font-size: 15px;
+} 
+
+.informativa li {
+    padding: 0;
+}
+
+.social h3 {
+    font-size: 15px;
+    color: white;
+}
+
+.social {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+}
+
+.icone-social img {
+    width: 30px;
 }
 
 

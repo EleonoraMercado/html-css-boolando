@@ -24,8 +24,8 @@ img {
     flex-wrap: wrap;
 }
 
-.row *{
-    padding: 0 6px;
+.modelli .col-33 {
+    padding: 6px;
 }
 
 /* inizio header */
@@ -175,7 +175,6 @@ section {
 .page-footer {
     background-color: black;
     color: white;
-    height: 60px;
     padding-top: 20px;
     padding-bottom: 20px;
 }
